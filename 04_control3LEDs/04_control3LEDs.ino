@@ -1,4 +1,4 @@
-int swCount = 0;   //스위치 동작 횟수 저장용 변수
+int swCount = 5;   //스위치 동작 횟수 저장용 변수
 
 int ledRed = 8;    // 
 int ledGreen = 9;
@@ -29,7 +29,7 @@ void serialEvent() {
     else if (inChar == 'B')
         toggleLED(ledBlue);
     else if (inChar == ' ')
-        delay(300);
+        delay(5000);
   }
 }
 void toggleLED(int ledPin) {
